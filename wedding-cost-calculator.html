@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nigerian Wedding Cost Calculator 2025 | The Unique Experience</title>
+<meta name="description" content="Free Nigerian wedding cost calculator with real 2025 market prices. Get an instant budget estimate for your Lagos, Abuja or Port Harcourt wedding — venue, catering, photography, décor and more.">
+<meta name="keywords" content="Nigerian wedding cost calculator, wedding budget Nigeria 2025, Lagos wedding cost, how much does a wedding cost in Nigeria, wedding price estimate Nigeria">
+<link rel="canonical" href="https://www.theuniqueexperience.ng/wedding-calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Nigerian Wedding Cost Calculator 2025",
+  "description": "Free interactive wedding budget calculator with real 2025 Nigerian market prices for Lagos, Abuja, Port Harcourt and nationwide.",
+  "url": "https://www.theuniqueexperience.ng/wedding-calculator",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "NGN" },
+  "provider": {
+    "@type": "Organization",
+    "name": "The Unique Experience",
+    "url": "https://www.theuniqueexperience.ng"
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Tenor+Sans&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --gold:#C9A84C; --gold-l:#E8C97A; --gold-p:#F5E6C0;
+  --dark:#0D0B08; --dark2:#131008; --dark3:#1C1810;
+  --cream:#F7F0E6; --muted:#8A7A62; --muted2:#5A4E3A;
+  --green:#5a9a6a; --red:#9a5a5a;
+}
+html { scroll-behavior:smooth; }
+body {
+  background:var(--dark); color:var(--cream);
+  font-family:'Montserrat',sans-serif; font-weight:300;
+  overflow-x:hidden; min-height:100vh;
+}
+
+/* ── BACKGROUND ── */
+.bg-layer {
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 50% at 15% 20%, rgba(201,168,76,.055) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 85% 80%, rgba(201,168,76,.04) 0%, transparent 60%),
+    var(--dark);
+}
+.bg-grid {
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image:linear-gradient(rgba(201,168,76,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.025) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse at center, black 20%, transparent 75%);
+}
+
+/* ── HEADER ── */
+header {
+  position:relative; z-index:10; text-align:center;
+  padding:60px 40px 48px;
+  border-bottom:1px solid rgba(201,168,76,.1);
+  background:linear-gradient(to bottom,rgba(13,11,8,.9),rgba(13,11,8,.4));
+}
+.h-brand {
+  font-family:'Tenor Sans',sans-serif; font-size:10px;
+  letter-spacing:.45em; text-transform:uppercase; color:var(--gold);
+  margin-bottom:20px; display:block;
+}
+.h-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(36px,6vw,72px); font-weight:300; line-height:1;
+  color:var(--cream); margin-bottom:16px;
+}
+.h-title em { font-style:italic; color:var(--gold-l); }
+.h-sub {
+  font-size:18px; color:var(--muted); max-width:540px; margin:0 auto 28px;
+  line-height:1.8; font-family:'Cormorant Garamond',serif; font-style:italic;
+}
+.h-notice {
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:'Tenor Sans',sans-serif; font-size:10px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--muted2);
+  border:1px solid rgba(138,122,98,.2); padding:8px 20px;
+}
+.h-notice span { color:var(--gold); }
+
+/* ── MAIN LAYOUT ── */
+.main { position:relative; z-index:10; display:grid; grid-template-columns:1fr 380px; gap:0; max-width:1340px; margin:0 auto; min-height:calc(100vh - 200px); }
+
+/* ── CALCULATOR PANEL ── */
+.calc-panel { padding:48px 56px 80px; border-right:1px solid rgba(201,168,76,.08); }
+
+/* ── SECTION HEADER ── */
+.sec-hd { margin-bottom:32px; padding-bottom:18px; border-bottom:1px solid rgba(201,168,76,.1); }
+.sec-lbl {
+  font-family:'Tenor Sans',sans-serif; font-size:9px; letter-spacing:.35em;
+  text-transform:uppercase; color:var(--gold); margin-bottom:10px; display:block;
+}
+.sec-title {
+  font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:300;
+  color:var(--cream); line-height:1.1;
+}
+.sec-title em { font-style:italic; color:var(--gold-l); }
+
+/* ── STEP BLOCKS ── */
+.step { margin-bottom:44px; }
+.step:last-child { margin-bottom:0; }
+
+/* ── LOCATION SELECTOR ── */
+.loc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.loc-btn {
+  background:var(--dark3); border:1px solid rgba(201,168,76,.12);
+  padding:16px 12px; text-align:center; cursor:pointer; transition:all .25s;
+  font-family:'Tenor Sans',sans-serif; font-size:10px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--muted);
+}
+.loc-btn:hover { border-color:rgba(201,168,76,.35); color:var(--cream); }
+.loc-btn.active { border-color:var(--gold); background:rgba(201,168,76,.1); color:var(--gold-l); }
+.loc-btn .loc-ico { font-size:22px; display:block; margin-bottom:8px; }
+.loc-btn .loc-mult {
+  font-size:8px; color:var(--gold); letter-spacing:.08em; margin-top:5px; display:block;
+}
+
+/* ── GUEST SLIDER ── */
+.guest-display {
+  text-align:center; margin-bottom:20px;
+}
+.guest-num {
+  font-family:'Cormorant Garamond',serif; font-size:64px; font-weight:300;
+  color:var(--gold-l); line-height:1; display:block;
+}
+.guest-lbl {
+  font-family:'Tenor Sans',sans-serif; font-size:10px; letter-spacing:.3em;
+  text-transform:uppercase; color:var(--muted); margin-top:6px;
+}
+input[type="range"] {
+  -webkit-appearance:none; width:100%; height:2px;
+  background:linear-gradient(to right,var(--gold) var(--pct,20%), rgba(201,168,76,.15) var(--pct,20%));
+  border-radius:0; outline:none; cursor:pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance:none; width:18px; height:18px;
+  background:var(--gold); border-radius:50%;
+  box-shadow:0 0 0 4px rgba(201,168,76,.15);
+  transition:box-shadow .2s;
+}
+input[type="range"]::-webkit-slider-thumb:hover { box-shadow:0 0 0 8px rgba(201,168,76,.2); }
+.guest-presets { display:flex; gap:8px; margin-top:14px; flex-wrap:wrap; }
+.preset-btn {
+  font-family:'Tenor Sans',sans-serif; font-size:9px; letter-spacing:.18em;
+  text-transform:uppercase; padding:7px 14px; background:none;
+  border:1px solid rgba(201,168,76,.15); color:var(--muted);
+  cursor:pointer; transition:all .2s;
+}
+.preset-btn:hover { border-color:var(--gold); color:var(--gold); }
+
+/* ── TIER SELECTOR ── */
+.tier-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.tier-card {
+  border:1px solid rgba(201,168,76,.12); padding:22px 16px;
+  text-align:center; cursor:pointer; transition:all .25s;
+  position:relative; overflow:hidden; background:var(--dark3);
+}
+.tier-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(to right,var(--gold),transparent); opacity:0; transition:opacity .3s;
+}
+.tier-card:hover::before, .tier-card.active::before { opacity:1; }
+.tier-card:hover { border-color:rgba(201,168,76,.3); }
+.tier-card.active { border-color:var(--gold); background:rgba(201,168,76,.07); }
+.tier-icon { font-size:26px; margin-bottom:10px; display:block; }
+.tier-name {
+  font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:400;
+  color:var(--cream); margin-bottom:5px;
+}
+.tier-desc { font-size:11px; color:var(--muted); line-height:1.6; }
+
+/* ── TOGGLES / INCLUSIONS ── */
+.toggles-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.toggle-item {
+  display:flex; align-items:center; justify-content:space-between;
+  background:var(--dark3); border:1px solid rgba(201,168,76,.1);
+  padding:14px 16px; cursor:pointer; transition:all .2s;
+  gap:10px;
+}
+.toggle-item:hover { border-color:rgba(201,168,76,.25); }
+.toggle-item.on { border-color:rgba(201,168,76,.35); background:rgba(201,168,76,.06); }
+.toggle-left { display:flex; align-items:center; gap:12px; flex:1; min-width:0; }
+.toggle-ico { font-size:18px; flex-shrink:0; }
+.toggle-info { min-width:0; }
+.toggle-name {
+  font-family:'Montserrat',sans-serif; font-size:12px; font-weight:400;
+  color:var(--cream); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.toggle-cost { font-size:10px; color:var(--muted); margin-top:2px; }
+.toggle-switch {
+  width:34px; height:18px; border-radius:9px; background:var(--dark2);
+  border:1px solid rgba(201,168,76,.2); position:relative; flex-shrink:0; transition:all .25s;
+}
+.toggle-switch::after {
+  content:''; position:absolute; top:2px; left:2px;
+  width:12px; height:12px; border-radius:50%;
+  background:var(--muted2); transition:all .25s;
+}
+.toggle-item.on .toggle-switch { background:rgba(201,168,76,.25); border-color:var(--gold); }
+.toggle-item.on .toggle-switch::after { left:16px; background:var(--gold); }
+
+/* ── RESULTS PANEL ── */
+.result-panel {
+  position:sticky; top:0; height:100vh; overflow-y:auto;
+  padding:48px 36px 80px;
+  background:linear-gradient(to bottom,var(--dark2),var(--dark));
+  border-left:1px solid rgba(201,168,76,.08);
+  display:flex; flex-direction:column;
+}
+.result-panel::-webkit-scrollbar { width:4px; }
+.result-panel::-webkit-scrollbar-track { background:transparent; }
+.result-panel::-webkit-scrollbar-thumb { background:rgba(201,168,76,.2); border-radius:2px; }
+
+.result-label {
+  font-family:'Tenor Sans',sans-serif; font-size:9px; letter-spacing:.4em;
+  text-transform:uppercase; color:var(--gold); margin-bottom:16px; display:block;
+}
+.total-display {
+  font-family:'Cormorant Garamond',serif; font-size:clamp(32px,4vw,48px);
+  font-weight:300; color:var(--gold-l); line-height:1; margin-bottom:6px;
+  transition:all .3s;
+}
+.total-sub { font-size:12px; color:var(--muted); margin-bottom:32px; }
+
+/* Per-person badge */
+.per-person {
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:'Tenor Sans',sans-serif; font-size:10px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--muted);
+  border:1px solid rgba(201,168,76,.12); padding:8px 14px; margin-bottom:28px;
+}
+.per-person strong { color:var(--gold-l); font-weight:400; }
+
+/* Breakdown bars */
+.breakdown { flex:1; }
+.breakdown-hd {
+  font-family:'Tenor Sans',sans-serif; font-size:9px; letter-spacing:.28em;
+  text-transform:uppercase; color:var(--muted2); margin-bottom:18px; display:block;
+}
+.line-item { margin-bottom:14px; }
+.line-top {
+  display:flex; justify-content:space-between; align-items:baseline;
+  margin-bottom:5px;
+}
+.line-name { font-size:12px; color:var(--muted); }
+.line-name.active { color:var(--cream); }
+.line-val { font-size:12px; color:var(--gold-l); font-family:'Cormorant Garamond',serif; font-size:16px; }
+.line-val.zero { color:var(--muted2); }
+.line-bar-wrap { height:2px; background:rgba(201,168,76,.08); border-radius:1px; overflow:hidden; }
+.line-bar { height:100%; background:linear-gradient(to right,var(--gold),var(--gold-l)); border-radius:1px; transition:width .5s cubic-bezier(.4,0,.2,1); }
+.line-bar.zero { background:rgba(201,168,76,.1); }
+
+/* Range indicator */
+.range-box {
+  background:var(--dark3); border:1px solid rgba(201,168,76,.12);
+  padding:20px; margin:24px 0; position:relative;
+}
+.range-box::before {
+  content:''; position:absolute; top:0; left:0; width:2px; bottom:0; background:var(--gold); opacity:.5;
+}
+.range-row { display:flex; justify-content:space-between; gap:12px; }
+.range-col { flex:1; text-align:center; }
+.range-lbl { font-family:'Tenor Sans',sans-serif; font-size:8px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted2); margin-bottom:5px; }
+.range-val { font-family:'Cormorant Garamond',serif; font-size:18px; color:var(--cream); }
+.range-sep { color:var(--muted2); font-size:18px; align-self:center; }
+
+/* CTA */
+.cta-block { margin-top:28px; }
+.cta-btn {
+  width:100%; background:var(--gold); color:var(--dark);
+  font-family:'Tenor Sans',sans-serif; font-size:11px; letter-spacing:.25em;
+  text-transform:uppercase; border:none; padding:18px 24px;
+  cursor:pointer; transition:all .3s; display:block; text-align:center; text-decoration:none;
+  margin-bottom:10px;
+}
+.cta-btn:hover { background:var(--gold-l); transform:translateY(-1px); }
+.cta-btn-o {
+  width:100%; background:none; border:1px solid rgba(201,168,76,.3);
+  color:var(--gold); font-family:'Tenor Sans',sans-serif; font-size:11px;
+  letter-spacing:.25em; text-transform:uppercase; padding:15px 24px;
+  cursor:pointer; transition:all .3s; display:block; text-align:center; text-decoration:none;
+}
+.cta-btn-o:hover { border-color:var(--gold); background:rgba(201,168,76,.06); }
+.cta-note { font-size:11px; color:var(--muted2); text-align:center; margin-top:12px; line-height:1.6; }
+
+/* Divider */
+.rule { border:none; border-top:1px solid rgba(201,168,76,.08); margin:32px 0; }
+
+/* Disclaimer */
+.disclaimer {
+  font-size:11px; color:var(--muted2); line-height:1.7;
+  border-top:1px solid rgba(201,168,76,.07); padding-top:20px; margin-top:auto;
+}
+.disclaimer strong { color:var(--muted); font-weight:400; }
+
+/* Savings insight */
+.insight {
+  background:rgba(201,168,76,.05); border:1px solid rgba(201,168,76,.15);
+  padding:16px 18px; margin-top:20px; display:flex; gap:12px; align-items:flex-start;
+}
+.insight-ico { font-size:18px; flex-shrink:0; }
+.insight-text { font-size:11px; color:var(--muted); line-height:1.7; }
+.insight-text strong { color:var(--gold-l); font-weight:400; }
+
+/* Footer */
+footer {
+  position:relative; z-index:10; text-align:center; padding:40px;
+  border-top:1px solid rgba(201,168,76,.08); font-size:12px; color:var(--muted2);
+}
+footer a { color:var(--gold); text-decoration:none; }
+footer strong { color:var(--muted); font-weight:400; }
+
+/* Animate number */
+@keyframes numPop { 0%{transform:scale(.96);opacity:.7} 100%{transform:scale(1);opacity:1} }
+.pop { animation:numPop .3s ease; }
+
+/* Mobile */
+@media(max-width:900px){
+  .main { grid-template-columns:1fr; }
+  .result-panel { position:static; height:auto; border-left:none; border-top:1px solid rgba(201,168,76,.08); }
+  .calc-panel { padding:32px 24px; }
+  .result-panel { padding:32px 24px 60px; }
+  .loc-grid { grid-template-columns:repeat(2,1fr); }
+  .toggles-grid { grid-template-columns:1fr; }
+  .tier-cards { grid-template-columns:1fr; gap:8px; }
+}
+</style>
+</head>
+<body>
+<div class="bg-layer"></div>
+<div class="bg-grid"></div>
+
+<!-- HEADER -->
+<header>
+  <span class="h-brand">The Unique Experience · Wedding Tools</span>
+  <h1 class="h-title">Nigerian Wedding<br>Cost <em>Calculator</em></h1>
+  <p class="h-sub">Real 2025 market prices. Instantly personalised to your guest count, location & vision.</p>
+  <div class="h-notice"><span>✦</span> Prices verified from Nigerian market data · Updated October 2025 <span>✦</span></div>
+</header>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- LEFT: CALCULATOR -->
+  <div class="calc-panel">
+
+    <!-- STEP 1: LOCATION -->
+    <div class="step">
+      <div class="sec-hd">
+        <span class="sec-lbl">Step 1</span>
+        <h2 class="sec-title">Where is your <em>wedding?</em></h2>
+      </div>
+      <div class="loc-grid">
+        <button class="loc-btn active" onclick="setLocation(this,'lagos',1.0)">
+          <span class="loc-ico">🌊</span>
+          Lagos
+          <span class="loc-mult">Baseline pricing</span>
+        </button>
+        <button class="loc-btn" onclick="setLocation(this,'abuja',1.15)">
+          <span class="loc-ico">🏛️</span>
+          Abuja
+          <span class="loc-mult">+15% vs Lagos</span>
+        </button>
+        <button class="loc-btn" onclick="setLocation(this,'ph',0.90)">
+          <span class="loc-ico">🛢️</span>
+          Port Harcourt
+          <span class="loc-mult">−10% vs Lagos</span>
+        </button>
+        <button class="loc-btn" onclick="setLocation(this,'ibadan',0.70)">
+          <span class="loc-ico">🌳</span>
+          Ibadan
+          <span class="loc-mult">−30% vs Lagos</span>
+        </button>
+        <button class="loc-btn" onclick="setLocation(this,'enugu',0.75)">
+          <span class="loc-ico">⛪</span>
+          Enugu / S-East
+          <span class="loc-mult">−25% vs Lagos</span>
+        </button>
+        <button class="loc-btn" onclick="setLocation(this,'other',0.80)">
+          <span class="loc-ico">🌍</span>
+          Other States
+          <span class="loc-mult">−20% vs Lagos</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- STEP 2: GUEST COUNT -->
+    <div class="step">
+      <div class="sec-hd">
+        <span class="sec-lbl">Step 2</span>
+        <h2 class="sec-title">How many <em>guests?</em></h2>
+      </div>
+      <div class="guest-display">
+        <span class="guest-num" id="guest-num">200</span>
+        <span class="guest-lbl">Expected Guests</span>
+      </div>
+      <input type="range" id="guest-slider" min="50" max="1000" step="25" value="200"
+        oninput="setGuests(this.value)"
+        style="--pct:15.8%">
+      <div class="guest-presets">
+        <button class="preset-btn" onclick="setGuests(75)">75 — Intimate</button>
+        <button class="preset-btn" onclick="setGuests(150)">150 — Small</button>
+        <button class="preset-btn" onclick="setGuests(250)">250 — Medium</button>
+        <button class="preset-btn" onclick="setGuests(400)">400 — Large</button>
+        <button class="preset-btn" onclick="setGuests(600)">600 — Grand</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: WEDDING TIER -->
+    <div class="step">
+      <div class="sec-hd">
+        <span class="sec-lbl">Step 3</span>
+        <h2 class="sec-title">Choose your <em>tier</em></h2>
+      </div>
+      <div class="tier-cards">
+        <div class="tier-card" onclick="setTier(this,'classic',1.0)">
+          <span class="tier-icon">🌿</span>
+          <div class="tier-name">Classic</div>
+          <div class="tier-desc">Beautiful, dignified celebration. Quality vendors without premium markup.</div>
+        </div>
+        <div class="tier-card active" onclick="setTier(this,'premium',1.55)">
+          <span class="tier-icon">✨</span>
+          <div class="tier-name">Premium</div>
+          <div class="tier-desc">Elevated styling, top-tier vendors. The most popular Lagos wedding standard.</div>
+        </div>
+        <div class="tier-card" onclick="setTier(this,'luxury',2.4)">
+          <span class="tier-icon">👑</span>
+          <div class="tier-name">Luxury</div>
+          <div class="tier-desc">No-expense-spared. Landmark venue, celebrity-level photographers, bespoke everything.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4: WHAT'S INCLUDED -->
+    <div class="step">
+      <div class="sec-hd">
+        <span class="sec-lbl">Step 4</span>
+        <h2 class="sec-title">What's <em>included?</em></h2>
+      </div>
+      <div class="toggles-grid" id="toggles-grid">
+
+        <div class="toggle-item on" onclick="toggleItem(this,'venue')" data-key="venue">
+          <div class="toggle-left">
+            <span class="toggle-ico">🏛️</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Venue Hire</div>
+              <div class="toggle-cost" id="cost-venue">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'catering')" data-key="catering">
+          <div class="toggle-left">
+            <span class="toggle-ico">🍽️</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Catering & Food</div>
+              <div class="toggle-cost" id="cost-catering">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'decor')" data-key="decor">
+          <div class="toggle-left">
+            <span class="toggle-ico">🌸</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Décor & Florals</div>
+              <div class="toggle-cost" id="cost-decor">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'photo')" data-key="photo">
+          <div class="toggle-left">
+            <span class="toggle-ico">📸</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Photography & Film</div>
+              <div class="toggle-cost" id="cost-photo">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'music')" data-key="music">
+          <div class="toggle-left">
+            <span class="toggle-ico">🎵</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Live Band & DJ</div>
+              <div class="toggle-cost" id="cost-music">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'ushers')" data-key="ushers">
+          <div class="toggle-left">
+            <span class="toggle-ico">🤵</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Ushers & Protocol</div>
+              <div class="toggle-cost" id="cost-ushers">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'outfits')" data-key="outfits">
+          <div class="toggle-left">
+            <span class="toggle-ico">👗</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Bridal Outfits</div>
+              <div class="toggle-cost" id="cost-outfits">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'makeup')" data-key="makeup">
+          <div class="toggle-left">
+            <span class="toggle-ico">💄</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Makeup & Hair</div>
+              <div class="toggle-cost" id="cost-makeup">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'security')" data-key="security">
+          <div class="toggle-left">
+            <span class="toggle-ico">🔐</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Security</div>
+              <div class="toggle-cost" id="cost-security">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'transport')" data-key="transport">
+          <div class="toggle-left">
+            <span class="toggle-ico">🚗</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Transportation</div>
+              <div class="toggle-cost" id="cost-transport">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'cake')" data-key="cake">
+          <div class="toggle-left">
+            <span class="toggle-ico">🎂</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Wedding Cake</div>
+              <div class="toggle-cost" id="cost-cake">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item on" onclick="toggleItem(this,'mc')" data-key="mc">
+          <div class="toggle-left">
+            <span class="toggle-ico">🎤</span>
+            <div class="toggle-info">
+              <div class="toggle-name">MC / Compère</div>
+              <div class="toggle-cost" id="cost-mc">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item" onclick="toggleItem(this,'drinks')" data-key="drinks">
+          <div class="toggle-left">
+            <span class="toggle-ico">🥂</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Drinks & Bar</div>
+              <div class="toggle-cost" id="cost-drinks">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item" onclick="toggleItem(this,'trad')" data-key="trad">
+          <div class="toggle-left">
+            <span class="toggle-ico">🥁</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Traditional Ceremony</div>
+              <div class="toggle-cost" id="cost-trad">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item" onclick="toggleItem(this,'souvenir')" data-key="souvenir">
+          <div class="toggle-left">
+            <span class="toggle-ico">🎁</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Souvenirs & Favours</div>
+              <div class="toggle-cost" id="cost-souvenir">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+        <div class="toggle-item" onclick="toggleItem(this,'planner')" data-key="planner">
+          <div class="toggle-left">
+            <span class="toggle-ico">📋</span>
+            <div class="toggle-info">
+              <div class="toggle-name">Event Planner</div>
+              <div class="toggle-cost" id="cost-planner">₦—</div>
+            </div>
+          </div>
+          <div class="toggle-switch"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- end calc-panel -->
+
+  <!-- RIGHT: RESULTS -->
+  <div class="result-panel">
+
+    <span class="result-label">Your Wedding Estimate</span>
+    <div class="total-display" id="total-display">₦0</div>
+    <div class="total-sub" id="total-sub">Calculating...</div>
+
+    <div class="per-person">
+      Cost per guest: <strong id="per-person-val">₦0</strong>
+    </div>
+
+    <!-- Breakdown bars -->
+    <div class="breakdown">
+      <span class="breakdown-hd">Budget Breakdown</span>
+
+      <div class="line-item" id="li-venue">
+        <div class="line-top">
+          <span class="line-name" id="ln-venue">🏛️ Venue Hire</span>
+          <span class="line-val" id="lv-venue">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-venue" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-catering">
+        <div class="line-top">
+          <span class="line-name" id="ln-catering">🍽️ Catering & Food</span>
+          <span class="line-val" id="lv-catering">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-catering" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-decor">
+        <div class="line-top">
+          <span class="line-name" id="ln-decor">🌸 Décor & Florals</span>
+          <span class="line-val" id="lv-decor">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-decor" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-photo">
+        <div class="line-top">
+          <span class="line-name" id="ln-photo">📸 Photography & Film</span>
+          <span class="line-val" id="lv-photo">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-photo" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-outfits">
+        <div class="line-top">
+          <span class="line-name" id="ln-outfits">👗 Bridal Outfits</span>
+          <span class="line-val" id="lv-outfits">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-outfits" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-music">
+        <div class="line-top">
+          <span class="line-name" id="ln-music">🎵 Live Band & DJ</span>
+          <span class="line-val" id="lv-music">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-music" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-drinks">
+        <div class="line-top">
+          <span class="line-name" id="ln-drinks">🥂 Drinks & Bar</span>
+          <span class="line-val" id="lv-drinks">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-drinks" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-ushers">
+        <div class="line-top">
+          <span class="line-name" id="ln-ushers">🤵 Ushers & Protocol</span>
+          <span class="line-val" id="lv-ushers">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-ushers" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-makeup">
+        <div class="line-top">
+          <span class="line-name" id="ln-makeup">💄 Makeup & Hair</span>
+          <span class="line-val" id="lv-makeup">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-makeup" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-transport">
+        <div class="line-top">
+          <span class="line-name" id="ln-transport">🚗 Transportation</span>
+          <span class="line-val" id="lv-transport">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-transport" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-trad">
+        <div class="line-top">
+          <span class="line-name" id="ln-trad">🥁 Traditional Ceremony</span>
+          <span class="line-val" id="lv-trad">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-trad" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-cake">
+        <div class="line-top">
+          <span class="line-name" id="ln-cake">🎂 Wedding Cake</span>
+          <span class="line-val" id="lv-cake">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-cake" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-security">
+        <div class="line-top">
+          <span class="line-name" id="ln-security">🔐 Security</span>
+          <span class="line-val" id="lv-security">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-security" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-mc">
+        <div class="line-top">
+          <span class="line-name" id="ln-mc">🎤 MC / Compère</span>
+          <span class="line-val" id="lv-mc">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-mc" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-souvenir">
+        <div class="line-top">
+          <span class="line-name" id="ln-souvenir">🎁 Souvenirs & Favours</span>
+          <span class="line-val" id="lv-souvenir">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-souvenir" style="width:0%"></div></div>
+      </div>
+
+      <div class="line-item" id="li-planner">
+        <div class="line-top">
+          <span class="line-name" id="ln-planner">📋 Event Planner</span>
+          <span class="line-val" id="lv-planner">₦0</span>
+        </div>
+        <div class="line-bar-wrap"><div class="line-bar" id="lb-planner" style="width:0%"></div></div>
+      </div>
+
+    </div><!-- end breakdown -->
+
+    <!-- Range -->
+    <div class="range-box">
+      <div style="font-family:'Tenor Sans',sans-serif;font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted2);margin-bottom:12px;">Realistic Budget Range</div>
+      <div class="range-row">
+        <div class="range-col">
+          <div class="range-lbl">Low Estimate</div>
+          <div class="range-val" id="range-low">₦0</div>
+        </div>
+        <div class="range-sep">—</div>
+        <div class="range-col">
+          <div class="range-lbl">High Estimate</div>
+          <div class="range-val" id="range-high">₦0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insight -->
+    <div class="insight" id="insight-box">
+      <span class="insight-ico">💡</span>
+      <div class="insight-text" id="insight-text">Loading insight...</div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+      <a href="https://www.theuniqueexperience.ng/#contact" class="cta-btn">
+        Book a Free Consultation ✦
+      </a>
+      <button class="cta-btn-o" onclick="window.print()">
+        Save / Print This Estimate
+      </button>
+      <p class="cta-note">
+        Share your estimate with your coordinator at The Unique Experience and we'll create a tailored proposal within 48 hours.
+      </p>
+    </div>
+
+    <hr class="rule">
+
+    <div class="disclaimer">
+      <strong>About these prices:</strong> Estimates are based on Nigerian market research as of October 2025 — including Cowrywise's wedding spending report, Lagos venue listings, and vendor rate data across major cities. Actual costs vary by vendor, date, and negotiation. Prices shown represent mid-market rates for each tier. <strong>This calculator is a planning guide, not a quote.</strong>
+    </div>
+
+  </div><!-- end result-panel -->
+
+</div><!-- end main -->
+
+<footer>
+  <p>Built by <a href="https://www.theuniqueexperience.ng">The Unique Experience</a> — Nigeria's #1 Event Planning Company &nbsp;·&nbsp; Lagos · Abuja · Port Harcourt · Nationwide</p>
+  <p style="margin-top:6px;">📱 +234 000 000 0000 &nbsp;·&nbsp; ✉ <a href="mailto:hello@theuniqueexperience.ng">hello@theuniqueexperience.ng</a></p>
+</footer>
+
+<script>
+// ─────────────────────────────────────────
+// BASE PRICES (Lagos, Classic tier, per wedding)
+// Sources: Cowrywise 2025 report, venue listings, market research
+// Catering is per-guest × guests; others are flat or scaled
+// ─────────────────────────────────────────
+const BASE = {
+  // Flat costs (Classic, Lagos, ~200 guests baseline)
+  venue:      2000000,   // ₦2M — mid-range hall Lagos (₦600k–₦7M range)
+  decor:      1200000,   // ₦1.2M — florals, drapes, stage (₦500k–₦3M)
+  photo:       900000,   // ₦900k — photographer + videographer (₦400k–₦3M)
+  music:       700000,   // ₦700k — live band + DJ (₦300k–₦2M)
+  outfits:     800000,   // ₦800k — bride gown + groom suit (₦400k–₦3M)
+  makeup:      250000,   // ₦250k — MUA + hair (₦100k–₦800k)
+  transport:   350000,   // ₦350k — cars for couple + bridal train
+  cake:        180000,   // ₦180k — 4-tier custom (₦80k–₦600k)
+  mc:          200000,   // ₦200k — professional MC (₦100k–₦600k)
+  security:    300000,   // ₦300k — 10–15 officers (₦150k–₦600k)
+  trad:        800000,   // ₦800k — traditional ceremony (₦400k–₦2M)
+  souvenir:    0,        // ₦0 default (calculated per-guest below)
+  drinks:      0,        // ₦0 default (calculated per-guest below)
+  planner:     0,        // ₦0 default (% of total)
+
+  // Per-guest costs (Classic)
+  catering_pg:  6500,   // ₦6,500/head buffet — (₦3,500–₦15,000 range, 2025)
+  drinks_pg:    2500,   // ₦2,500/head
+  souvenir_pg:  1500,   // ₦1,500/head
+};
+
+// Guest-scaled items
+const GUEST_SCALED = ['catering','drinks','souvenir'];
+
+// Tier multipliers — applied to all base costs
+const TIERS = { classic:1.0, premium:1.55, luxury:2.4 };
+
+// Tier-specific per-head overrides
+const TIER_PG = {
+  classic:  { catering_pg: 6500,  drinks_pg: 2500,  souvenir_pg: 1500  },
+  premium:  { catering_pg: 10500, drinks_pg: 4000,  souvenir_pg: 2500  },
+  luxury:   { catering_pg: 18000, drinks_pg: 8000,  souvenir_pg: 5000  },
+};
+
+// Location multipliers
+let locMult = 1.0;
+let tierMult = 1.55;
+let tierKey = 'premium';
+let guests = 200;
+
+// Which items are enabled
+const enabled = {
+  venue:true, catering:true, decor:true, photo:true, music:true,
+  ushers:true, outfits:true, makeup:true, security:true, transport:true,
+  cake:true, mc:true, drinks:false, trad:false, souvenir:false, planner:false
+};
+
+// Ushers — scale by guests
+function getUshers(g, tier, loc) {
+  const base = Math.max(8, Math.round(g / 25));
+  const ratePerUsher = tier === 'luxury' ? 30000 : tier === 'premium' ? 20000 : 12000;
+  return Math.round(base * ratePerUsher * loc);
+}
+
+// Planner = 10% of subtotal (before planner)
+function getPlannerFee(subtotal) {
+  return Math.round(subtotal * 0.10);
+}
+
+function compute() {
+  const pg = TIER_PG[tierKey];
+  const vals = {};
+
+  // Flat costs
+  const flatKeys = ['venue','decor','photo','music','outfits','makeup','transport','cake','mc','security','trad'];
+  for (const k of flatKeys) {
+    vals[k] = enabled[k] ? Math.round(BASE[k] * tierMult * locMult) : 0;
+  }
+
+  // Guest-scaled
+  vals.catering = enabled.catering ? Math.round(guests * pg.catering_pg * locMult) : 0;
+  vals.drinks    = enabled.drinks   ? Math.round(guests * pg.drinks_pg   * locMult) : 0;
+  vals.souvenir  = enabled.souvenir ? Math.round(guests * pg.souvenir_pg * locMult) : 0;
+
+  // Ushers
+  vals.ushers = enabled.ushers ? getUshers(guests, tierKey, locMult) : 0;
+
+  // Planner (on subtotal of everything except planner itself)
+  const subtotalNoPlanner = Object.entries(vals).reduce((s,[k,v]) => k!=='planner' ? s+v : s, 0);
+  vals.planner = enabled.planner ? getPlannerFee(subtotalNoPlanner) : 0;
+
+  const total = Object.values(vals).reduce((a,b)=>a+b,0);
+  return { vals, total };
+}
+
+function fmt(n) {
+  if (n === 0) return '₦0';
+  if (n >= 1_000_000) return '₦' + (n/1_000_000).toFixed(1).replace(/\.0$/,'') + 'M';
+  return '₦' + n.toLocaleString('en-NG');
+}
+
+function fmtFull(n) {
+  return '₦' + n.toLocaleString('en-NG');
+}
+
+function render() {
+  const { vals, total } = compute();
+
+  // Update toggle costs
+  for (const [k, v] of Object.entries(vals)) {
+    const el = document.getElementById('cost-' + k);
+    if (el) el.textContent = v > 0 ? fmt(v) : 'Toggle to include';
+  }
+
+  // Total
+  const td = document.getElementById('total-display');
+  td.textContent = fmt(total);
+  td.classList.remove('pop');
+  void td.offsetWidth;
+  td.classList.add('pop');
+
+  document.getElementById('total-sub').textContent =
+    `${guests.toLocaleString()} guests · ${tierKey.charAt(0).toUpperCase()+tierKey.slice(1)} · ${document.querySelector('.loc-btn.active')?.textContent.trim().split('\n')[0] || 'Lagos'}`;
+
+  document.getElementById('per-person-val').textContent = total > 0 ? fmt(Math.round(total/guests)) : '₦0';
+
+  // Breakdown bars — scale each bar relative to largest
+  const maxVal = Math.max(...Object.values(vals), 1);
+  const lineKeys = Object.keys(vals);
+  for (const k of lineKeys) {
+    const v = vals[k];
+    const lv = document.getElementById('lv-' + k);
+    const lb = document.getElementById('lb-' + k);
+    const ln = document.getElementById('ln-' + k);
+    if (!lv) continue;
+    lv.textContent = v > 0 ? fmt(v) : '—';
+    lv.className = 'line-val' + (v === 0 ? ' zero' : '');
+    if (lb) { lb.style.width = (v > 0 ? Math.round((v/maxVal)*100) : 0) + '%'; lb.className = 'line-bar' + (v===0?' zero':''); }
+    if (ln) ln.className = 'line-name' + (v > 0 ? ' active' : '');
+  }
+
+  // Range — ±20% for low, +35% for high
+  document.getElementById('range-low').textContent  = fmt(Math.round(total * 0.80));
+  document.getElementById('range-high').textContent = fmt(Math.round(total * 1.35));
+
+  // Smart insight
+  const insightEl = document.getElementById('insight-text');
+  let insightHtml = '';
+  const cateringPct = total > 0 ? (vals.catering / total * 100) : 0;
+  const saving = Math.round(total * 0.20);
+
+  if (tierKey === 'luxury') {
+    insightHtml = `<strong>Luxury weddings</strong> command the best vendors — book your photographer and venue at least <strong>12 months ahead</strong> for guaranteed availability at top Lagos venues like Civic Centre or Landmark.`;
+  } else if (guests > 400) {
+    insightHtml = `With <strong>${guests} guests</strong>, catering is your #1 cost (${cateringPct.toFixed(0)}% of total). Choosing buffet over plated service can save up to <strong>${fmt(Math.round(vals.catering * 0.15))}</strong>.`;
+  } else if (!enabled.planner) {
+    insightHtml = `Adding a <strong>professional event planner</strong> costs ~10% but couples who hire planners typically <em>save 15–25%</em> through vendor negotiations and avoiding costly mistakes.`;
+  } else {
+    insightHtml = `A <strong>weekday or off-peak wedding</strong> can reduce venue and vendor costs by up to 30%, saving you approximately <strong>${fmt(saving)}</strong> on this budget.`;
+  }
+  insightEl.innerHTML = insightHtml;
+}
+
+// ── CONTROLS ──
+function setLocation(btn, key, mult) {
+  document.querySelectorAll('.loc-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  locMult = mult;
+  render();
+}
+
+function setGuests(val) {
+  guests = parseInt(val);
+  document.getElementById('guest-num').textContent = guests.toLocaleString();
+  const slider = document.getElementById('guest-slider');
+  slider.value = guests;
+  // Update track fill
+  const pct = ((guests - 50) / (1000 - 50) * 100).toFixed(1);
+  slider.style.setProperty('--pct', pct + '%');
+  render();
+}
+
+function setTier(el, key, mult) {
+  document.querySelectorAll('.tier-card').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  tierKey = key;
+  tierMult = mult;
+  render();
+}
+
+function toggleItem(el, cat, idx) {
+  el.classList.toggle('active');
+  const item = categories[cat][idx];
+  item.on = !item.on;
+  render();
+}
+
+// Initial render
+render();
+</script>
+</body>
+</html>
